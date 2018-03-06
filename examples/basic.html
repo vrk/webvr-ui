@@ -151,6 +151,13 @@
 
     // Add button to the #button element
     document.getElementById("button").appendChild(enterVR.domElement);
+    renderer.domElement.addEventListener('touchstart', () => {
+        console.log('touchstart');
+    });
+    renderer.domElement.addEventListener('click', () => {
+        console.log('click');
+    });
+
 
     //
     // WEBGL SCENE SETUP
