@@ -91,6 +91,9 @@
 </body>
 
 <script>
+    // Set up the polyfill.
+    new window.WebVRPolyfill({'BUFFER_SCALE': 1});
+    
     // Setup three.js WebGL renderer.
     var renderer = new THREE.WebGLRenderer();
 
